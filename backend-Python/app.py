@@ -56,4 +56,4 @@ def manage_product(product_id):
         return jsonify({'result': 'Product deleted'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0",port=8080)
