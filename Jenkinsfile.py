@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@FALCOPARISIEN 
-raoufcherfa
-/
-employe
-Public
-Fork your own copy of raoufcherfa/employe
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-employe/Jenkinsfile
-
-Abderaouf CHERFA add deploys
-Latest commit 9c3d1cd 13 hours ago
- History
- 0 contributors
-39 lines (39 sloc)  978 Bytes
-
 pipeline {
     agent any
     environment {
@@ -36,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/raoufcherfa/employe.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/PierreJoDC/PJDC_AWS.git']]])
             }
         }
         stage('Build') {
@@ -66,18 +37,3 @@ pipeline {
         }
     }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-employe/Jenkinsfile at master · raoufcherfa/employe
